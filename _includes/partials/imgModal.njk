@@ -1,0 +1,6 @@
+<div class="imgModal-container">
+{%- for recette in collections.recettes -%}
+        <div id="js-imgModal"  class="hidden" data-img="{{ recette.data.title }}">
+        <img class="imgModal-image" src="{{ recette.data.image }}" data-img="{{ recette.data.title }}"/>
+        </div>
+{%- endfor %}

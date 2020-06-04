@@ -1,0 +1,5 @@
+<ul class="{% if page.url === '/recettes/' %}dark-navigation{% else %}nav{% endif %}">
+    {%- for entry in collections.all | eleventyNavigation %}
+    <li class="{% if page.url === '/recettes/' %}dark-nav{% else %}light-nav{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+    {%- endfor %}
+</ul>

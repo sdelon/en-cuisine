@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Accueil
+  order: 1
+---
+
+{% include 'partials/titre-svg.njk' %}
+
+{%- for recette in collections.recettes -%}
+      <a class="home-link" href="{{recette.url}}">
+        <p {% if page.url == recette.url %} class="active" {% endif %} class="card-titre" data-titre="{{ recette.data.title }}">
+          {{ recette.data.title }} 
+        </a>
+        <span class="card-cat"> | {{ recette.data.categorie }}</span>
+        </p> 
+      {% if recette.data.excerpt !== undefined %}
+        <span class="excerpt">{{ recette.data.excerpt }}</span>
+      {% endif %}      
+{%- endfor %}
+
+{% include 'partials/imgModal.njk' %}
+<div>

@@ -1,0 +1,20 @@
+{
+  "name": "CMS-ecommerce-base-en-cuisine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.5",
+    "axios": "^0.19.2"
+  },
+  "dependencies": {
+    "algoliasearch": "^4.2.0"
+  }
+}

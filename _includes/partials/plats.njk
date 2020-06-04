@@ -1,0 +1,21 @@
+{%- for recette in collections.recettes -%}
+    {% if recette.data.categorie === "plat" %}
+    <div class="partial-container">
+        <img class="partial-img" src="{{ recette.data.image }}"></img>
+        <a class="partial-link" 
+            href="{{recette.url}}">
+            <p {% if page.url == recette.url %} 
+                class="active" 
+               {% endif %} 
+                class="partial-titre">{{ recette.data.title }}
+            </p>
+        </a>
+    <div class="details-grid-container">
+        <div class="details-flex-container"><span class="intitule-detail">Temps</span>35 min</div>
+        <div class="details-flex-container"><span class="intitule-detail">Difficulté</span>facile</div>
+        <div class="details-flex-container"><span class="intitule-detail">Quantité</span>12</div>
+    </div>
+        <p class="bottom-partial-link"><a href="{{recette.url}}"><span class="recette-span">Recette</span></a></p>
+     </div>
+    {% endif %}
+{%- endfor %}

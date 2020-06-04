@@ -1,0 +1,10 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.titleFav or titleFav or metadata.titleFav }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <script src="https://use.fontawesome.com/ab1a4d94eb.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+</head>

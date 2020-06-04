@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  {% include 'layouts/head.njk' %}
+  <body>
+    <div class="divided">
+      <header class="header-left-container">
+            <h1 class="title-home"><a class="home-link" href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+            <div class="divider-bar"></div>
+            {% include 'layouts/nav.njk' %}
+      </header>
+      <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>        
+        <div class="right-container">
+          {{ content | safe }}
+        </div>
+      </main>
+    </div>
+    {% include 'layouts/footer.njk' %}
+    <script src="{{ '/js/index.js' }}"></script>
+  </body>
+</html>

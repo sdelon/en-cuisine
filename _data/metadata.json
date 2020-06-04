@@ -1,0 +1,17 @@
+{
+    "titleFav": "En cuisine",
+    "title": "En cuisine",
+    "url": "https://myurl.com/",
+    "description": "Learner on a eleventy journey",
+    "feed": {
+      "subtitle": "I am writing while learning Javascript",
+      "filename": "feed.xml",
+      "path": "/feed/feed.xml",
+      "id": "https://myurl.com/"
+    },
+    "author": {
+      "name": "sdelon",
+      "email": "youremailaddress@example.com"
+    }
+  }
+  
